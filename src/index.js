@@ -17,7 +17,7 @@ function onInputSearch(event) {
 
     const countryToSearch = event.target.value.trim();
 
-    if (countryToSearch === "") {
+    if (!countryToSearch) {
         clearCountries();
         return;
     }
